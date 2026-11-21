@@ -1,3 +1,7 @@
+-- 05_check4_oxford_total.sql
+-- Check: the Total column is blank on Oxford's waiting-list rows,
+-- so Total All is used for waiting-list totals.
+
 USE RTT;
 SELECT
     COUNT(*)                              AS n_rows,

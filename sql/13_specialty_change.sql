@@ -1,3 +1,7 @@
+-- 13_specialty_change.sql
+-- Change by specialty, September 2025 vs August 2026:
+-- waits over 52 weeks and % within 18 weeks.
+
 USE RTT;
 SELECT specialty_name,
     SUM(CASE WHEN [month] = '2025-09-01' THEN over_52 END) AS over52_sep25,

@@ -1,3 +1,7 @@
+-- 19_england_excl_oxford.sql
+-- England's % within 18 weeks with and without Oxford, to check that the
+-- comparison isn't distorted by Oxford being part of the England figure.
+
 USE RTT;
 SELECT e.[month],
        CAST(100.0 * e.within_18 / e.waiting_list AS DECIMAL(5,1)) AS england_pct,

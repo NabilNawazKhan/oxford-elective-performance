@@ -1,3 +1,7 @@
+-- 14_check_parts.sql
+-- Check of the RTT parts for August 2026: totals, band totals and
+-- unknown clock starts by part.
+
 USE RTT;
 SELECT rtt_part,
        SUM(total_all)     AS total_all,

@@ -1,3 +1,7 @@
+-- 12_specialty_ranking.sql
+-- Specialties in August 2026, ranked by waits over 52 weeks,
+-- with waits over 65 weeks and % within 18 weeks.
+
 USE RTT;
 SELECT specialty_code, specialty_name, total_all, over_52, over_65,
        CAST(100.0 * within_18 / NULLIF(total_all, 0) AS DECIMAL(5,1)) AS pct_within_18

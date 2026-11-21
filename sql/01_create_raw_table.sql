@@ -1,3 +1,7 @@
+-- 01_create_raw_table.sql
+-- Creates the staging table dbo.rtt_raw: all 121 columns of NHS England's
+-- RTT 'Full CSV data file', stored as text (scripted from SSMS).
+
 USE [RTT]
 GO
 
@@ -132,5 +136,3 @@ CREATE TABLE [dbo].[rtt_raw](
 	[Total All] [varchar](255) NULL
 ) ON [PRIMARY]
 GO
-
-

@@ -1,6 +1,11 @@
+-- 10_create_table.sql
+-- Builds the clean table dbo.oxford_specialty_month (month x specialty x RTT part)
+-- for Oxford, excluding NONC. The 105 week-band columns are summed with
+-- dynamic SQL built from sys.columns.
+
 USE RTT;
 
--- 1. Build the four band sums from the column list (no typing or pasting needed)
+-- 1. Build the four band sums from the column list in sys.columns
 DECLARE @w18 NVARCHAR(MAX), @o52 NVARCHAR(MAX), @o65 NVARCHAR(MAX), @bt NVARCHAR(MAX), @sql NVARCHAR(MAX);
 
 SELECT

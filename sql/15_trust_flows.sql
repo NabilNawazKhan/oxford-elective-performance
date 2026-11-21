@@ -1,3 +1,8 @@
+-- 15_trust_flows.sql
+-- Monthly flows for Oxford: new pathways (Part_3), completed pathways
+-- (Part_1A + Part_1B), the waiting list (Part_2), and removals not reported
+-- as completed pathways.
+
 USE RTT;
 WITH flows AS (
     SELECT [month],

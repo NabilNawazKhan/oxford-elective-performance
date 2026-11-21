@@ -1,3 +1,8 @@
+-- 16_build_forecast.sql
+-- Builds dbo.oxford_forecast: the actual waiting list plus three straight-line
+-- scenarios to August 2027 (6-month average change, 3-month average change,
+-- and 10% more completed pathways each month).
+
 USE RTT;
 DROP TABLE IF EXISTS dbo.oxford_forecast;
 
